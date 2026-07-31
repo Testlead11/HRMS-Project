@@ -69,5 +69,7 @@ When('enter password', async (dataTable:DataTable)=> {
     let password:string = data[0][0];
     console.log(password);
     await page.locator("//input[@name='txtPassword']").fill(password);
+        console.log("username successfully entered");
+
 
 });
